@@ -1,1 +1,7 @@
+Docker:
+-Makes Software instalation and running very easy without worrying about setup or dependencies.
+-Docker Client -> responsible to issue commands to server
+-Docker Server -> creates images, runs containers, etc
+
+
 
