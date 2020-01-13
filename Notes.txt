@@ -2,6 +2,16 @@ Docker:
 -Makes Software instalation and running very easy without worrying about setup or dependencies.
 -Docker Client -> responsible to issue commands to server
 -Docker Server -> creates images, runs containers, etc
+-Docker Container -> 
+Key commands:
+1. Check docker version:
+$docker version
+
+2. Start docker on boot(Manual)
+$sudo service docker start
+Note: Docker service can be made available automatically on boot.
+
+
 
 
 
