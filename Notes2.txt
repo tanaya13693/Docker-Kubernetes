@@ -1,0 +1,27 @@
+*Overriding Default Commands:
+$docker run busybox ls
+Busybx is a file system image. Inside it has ls, echo programs are part of busybox filesystem image. Hence, ls command will overwrite docker run command.
+
+$docker run busybox ping google.com
+
+$docker ps
+List all running containers
+
+$docker ps --all
+List of all container that have ever started on our machine
+
+*Create a docker container and start the container
+[parth@parth-Lenovo-Y40-70 ~]$ docker create hello-world
+38bf11f53a60e34b1db023d8bb6ac0aeaf3aae4c8a46b4fc570e335040ee7a07
+[parth@parth-Lenovo-Y40-70 ~]$ docker start 38bf11f53a60e34b1db023d8bb6ac0aeaf3aae4c8a46b4fc570e335040ee7a07
+38bf11f53a60e34b1db023d8bb6ac0aeaf3aae4c8a46b4fc570e335040ee7a07
+[parth@parth-Lenovo-Y40-70 ~]$ docker start -a 38bf11f53a60e34b1db023d8bb6ac0aeaf3aae4c8a46b4fc570e335040ee7a07
+Hello from Docker!
+
+Explanation:
+Createion will place the image in container memory allocation area and will return the id. Docker start will start the actual process to run using that id.
+
+
+*Removing stopped containers
+$docker system prune
+
