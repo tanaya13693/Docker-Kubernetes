@@ -2,7 +2,10 @@ Docker:
 -Makes Software instalation and running very easy without worrying about setup or dependencies.
 -Docker Client -> responsible to issue commands to server
 -Docker Server -> creates images, runs containers, etc
--Docker Container -> 
+-Docker Container -> Container is not a physical space on your PC. Instead, it is a group of running processes(e.g printing, spotify, chrome, etc)+Kernel+Hard Driver(RAM/CPU, etc)
+-Docker Image -> It is like File System snapshot(Application+Software required to run an application) and command to run that application on software(e.g. >run chrome). It is a single file with all the dependencies and configurations to run a program. 
+-Relation between Container and Image -> When image is run on the container, the file system snapshot is allocated into Hard Drive. Then startup command is executed. Resources are allocated and alication starts running.
+
 Key commands:
 1. Check docker version:
 $docker version
