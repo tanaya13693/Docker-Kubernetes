@@ -11,6 +11,9 @@ $docker version
 $sudo service docker start
 Note: Docker service can be made available automatically on boot.
 
+3. Run Hello World Image on docker:
+$docker run hello-world
+
 
 
 
