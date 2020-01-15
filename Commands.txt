@@ -64,7 +64,9 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 [parth@parth-Lenovo-Y40-70 ~]$ docker kill 040fcab03ada
 040fcab03ada
 
-Note: 'Kill' command immidiately kills the process inside the container and shuts container down. While 'Stop' command stops the process inside the container - The process takes about 10sec to stop before the container is killed.
+Note: 'Kill' command immidiately kills the process inside the container and shuts container down. While 'Stop' command stops the process inside the container - The process takes about 10sec to stop(some processes to stut down) before the container is killed.
+
+
 
 
 
