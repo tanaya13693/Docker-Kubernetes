@@ -66,6 +66,10 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 Note: 'Kill' command immidiately kills the process inside the container and shuts container down. While 'Stop' command stops the process inside the container - The process takes about 10sec to stop(some processes to stut down) before the container is killed.
 
+---------------------------------------------------------------------------------
+
+01/16/2020:
+Execute commands in running container:
 
 
 
