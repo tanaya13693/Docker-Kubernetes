@@ -69,8 +69,42 @@ Note: 'Kill' command immidiately kills the process inside the container and shut
 ---------------------------------------------------------------------------------
 
 01/16/2020:
-Execute commands in running container:
+Start docker shell with exec command:
+$docker exec -it <containerid> sh
 
+OR
+
+[parth@parth-Lenovo-Y40-70 ~]$ docker run -it busybox sh
+/ # ls
+bin   dev   etc   home  proc  root  sys   tmp   usr   var
+/ # exit
+
+--------------------------------------------------------------------------------
+
+
+*Redis Installation(Not a docker command)*
+[parth@parth-Lenovo-Y40-70 ~]$ sudo apt-get -y install redis-server
+[sudo] password for parth: 
+Reading package lists... Done
+Processing triggers for ureadahead (0.100.0-16) ...
+..........
+[parth@parth-Lenovo-Y40-70 ~]$ sudo service redis-server status
+redis-server is running
+[parth@parth-Lenovo-Y40-70 ~]$ 
+[parth@parth-Lenovo-Y40-70 ~]$ sudo service redis-server restart
+Stopping redis-server: redis-server.
+Starting redis-server: redis-server.
+
+--------------------------------------------------------------------------------
+
+
+*Create Docker Image*
+Check Dockerfile
+
+*BuildImage*
+$docker build .
+Successfully built 9bf851b7f83c
+[parth@parth-Lenovo-Y40-70 RedisImage]$ docker run 9bf851b7f83c
 
 
 
