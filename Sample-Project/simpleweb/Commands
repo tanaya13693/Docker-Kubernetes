@@ -1,0 +1,22 @@
+
+#Commands to run docker image:
+
+#Build an image
+$docker build .
+
+#Tag the image to the container
+$docker build -t tanaya13693/simpleweb .
+
+#Run the image
+$docker run tanaya13693/simpleweb
+
+
+
+
+###############################################################
+
+
+#Port mapping
+#Map incoming request on port 8080 to the one inside the container
+$docker run -p 8080:8080 tanaya13693/simpleweb
+
