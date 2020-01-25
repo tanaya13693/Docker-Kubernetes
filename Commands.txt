@@ -106,6 +106,10 @@ $docker build .
 Successfully built 9bf851b7f83c
 [parth@parth-Lenovo-Y40-70 RedisImage]$ docker run 9bf851b7f83c
 
+--------------------------------------------------------------------------------------------------
+
+
+
 
 
 
