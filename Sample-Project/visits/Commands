@@ -1,0 +1,9 @@
+
+
+$ docker build .
+$ docker build -t tanaya13693/visits .
+
+-----------
+
+
+$docker run redis

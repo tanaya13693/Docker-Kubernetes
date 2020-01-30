@@ -20,3 +20,5 @@ $docker run tanaya13693/simpleweb
 #Map incoming request on port 8080 to the one inside the container
 $docker run -p 8080:8080 tanaya13693/simpleweb
 
+$docker ps
+
