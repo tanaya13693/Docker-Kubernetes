@@ -7,3 +7,36 @@ $ docker build -t tanaya13693/visits .
 
 
 $docker run redis
+
+-----------
+
+#Docker compose: It is used to connect Container1(which has redis) with Container2(which has NodeJS)
+
+$docker-compose up
+
+#launch docker in background
+$docker-compose up -d
+
+#Stop containers
+$docker-compose down
+
+Example -->
+
+[parth@parth-Lenovo-Y40-70 visits]$ docker-compose up -d
+Starting visits_redis-server_1 ... done
+Starting visits_node-app_1     ... done
+[parth@parth-Lenovo-Y40-70 visits]$ docker ps
+CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS              PORTS                    NAMES
+8b49a4ef3001        redis                   "docker-entrypoint.s…"   17 minutes ago      Up 9 seconds        6379/tcp                 visits_redis-server_1
+f1dacc2d751b        visits_node-app         "docker-entrypoint.s…"   17 minutes ago      Up 9 seconds        0.0.0.0:4001->8081/tcp   visits_node-app_1
+11a607469019        tanaya13693/simpleweb   "docker-entrypoint.s…"   4 days ago          Up 4 days           0.0.0.0:8080->8080/tcp   vibrant_banach
+[parth@parth-Lenovo-Y40-70 visits]$ docker-compose down
+Stopping visits_redis-server_1 ... done
+Stopping visits_node-app_1     ... done
+Removing visits_redis-server_1 ... done
+Removing visits_node-app_1     ... done
+Removing network visits_default
+
+------------
+
+
