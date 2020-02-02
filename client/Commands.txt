@@ -1,0 +1,33 @@
+
+#Check NodeJS version:
+$node -v
+
+#Create React App called client
+$npx create-react-app client
+
+
+--------------------------
+Build Dockerfile.dev:
+$docker build -f Dockerfile.dev .
+
+--------------------------
+Command for docker volume(refer/map folder from inside of the container to outside of the container)
+$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app e267d8b4d12d
+
+Note:
+Above command refers folders instide container to the folder outside of the container. So if you make changes in the local folders, they get reflected as is and you do not need to do 'docker run'
+
+---------------------------
+
+
+
+
+
+#Necessary commands:
+1. starts up a development server
+$npm run start
+2. run tests associated with project
+$npm run test
+3. builds production version of the application
+$npm run build
+

@@ -1,0 +1,6 @@
+
+#Check NodeJS version:
+$node -v
+
+#Create React App
+$npx create-react-app client
